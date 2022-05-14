@@ -1,0 +1,21 @@
+@import "./colors";
+@import "./mixins";
+
+#definitions {
+  .definitions {
+    & > div {
+      margin-bottom: 0.5rem;
+
+      .title {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .content {
+    @include tablet-upwards {
+      @include flexMixin(row, no-wrap, center, center);
+      gap: 2rem;
+    }
+  }
+}

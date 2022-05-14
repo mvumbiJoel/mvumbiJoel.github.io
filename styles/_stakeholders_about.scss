@@ -1,0 +1,63 @@
+@import "./colors";
+@import "./mixins";
+
+#stakeholders_about {
+  @include tablet-upwards {
+    @include flexMixin(row, no-wrap, flex-start, flex-start);
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .stakeholders {
+    .content {
+      & > div {
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .about_project {
+    .content {
+      p {
+        text-align: justify;
+      }
+
+      & :nth-child(1) {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .files {
+      margin-top: 0.5rem;
+
+      ol {
+        padding-left: 1rem;
+
+        li {
+          a {
+            display: block;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .elicitation {
+    margin-top: 0.5rem;
+
+    .content {
+      & > div {
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .results {
+    margin-top: 0.5rem;
+  }
+}

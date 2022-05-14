@@ -1,0 +1,51 @@
+@import "./colors";
+@import "./mixins";
+
+#top {
+  padding: 0 0 1rem 0;
+  @include flexMixin(column, no-wrap, flex-end, flex-end);
+
+  @include tablet-upwards {
+    @include flexMixin(row, no-wrap, center, space-between);
+    gap: 1rem;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    background-color: $bluee;
+    color: $white;
+    padding: 1rem;
+
+    @include tablet-upwards {
+      @include flexMixin(row, no-wrap, center, space-between);
+      padding-left: 2rem;
+    }
+
+    .profile-photo {
+      width: 6rem;
+      height: 6rem;
+
+      @include tablet-upwards {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    & > div {
+      p {
+        & :nth-child(1) {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .nci-logo {
+    width: 5rem;
+    height: 5rem;
+
+    @include tablet-upwards {
+      margin-right: 1rem;
+    }
+  }
+}

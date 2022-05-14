@@ -1,0 +1,40 @@
+@import "./colors";
+@import "./mixins";
+
+footer {
+  width: 100%;
+  background-color: $bluee;
+
+  .content {
+    padding: 1rem;
+    color: $white;
+
+    @include tablet-upwards {
+      @include flexMixin(row, no-wrap, center, center);
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .std_contact,
+    .std_id {
+      & :nth-child(1) {
+        font-weight: 600;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .std_contact {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .divider {
+    display: none;
+
+    @include tablet-upwards {
+      display: block;
+    }
+  }
+}

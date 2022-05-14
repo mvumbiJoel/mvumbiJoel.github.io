@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+#top {
+  padding: 0 0 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  #top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+#top .content-wrapper {
+  width: 100%;
+  background-color: #09368b;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #top .content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 2rem;
+  }
+}
+
+#top .content-wrapper .profile-photo {
+  width: 6rem;
+  height: 6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #top .content-wrapper .profile-photo {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+#top .content-wrapper > div p :nth-child(1) {
+  font-weight: 600;
+}
+
+#top .nci-logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #top .nci-logo {
+    margin-right: 1rem;
+  }
+}
+
+#definitions .definitions > div {
+  margin-bottom: 0.5rem;
+}
+
+#definitions .definitions > div .title {
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+  #definitions .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #stakeholders_about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+#stakeholders_about .stakeholders .content > div span {
+  font-weight: 600;
+}
+
+#stakeholders_about .about_project .content p {
+  text-align: justify;
+}
+
+#stakeholders_about .about_project .content :nth-child(1) {
+  margin-bottom: 1.25rem;
+}
+
+#stakeholders_about .about_project .files {
+  margin-top: 0.5rem;
+}
+
+#stakeholders_about .about_project .files ol {
+  padding-left: 1rem;
+}
+
+#stakeholders_about .about_project .files ol li a {
+  display: block;
+  text-decoration: none;
+}
+
+#stakeholders_about .elicitation {
+  margin-top: 0.5rem;
+}
+
+#stakeholders_about .elicitation .content > div span {
+  font-weight: 600;
+}
+
+#stakeholders_about .results {
+  margin-top: 0.5rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #09368b;
+}
+
+footer .content {
+  padding: 1rem;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+}
+
+footer .content .std_contact :nth-child(1),
+footer .content .std_id :nth-child(1) {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+footer .content .std_contact a {
+  color: #ffffff;
+}
+
+footer .divider {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .divider {
+    display: block;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.site {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #09368b;
+}
+
+@media only screen and (min-width: 768px) {
+  .site {
+    text-align: right;
+    padding-right: 2rem;
+  }
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 1.25rem;
+  }
+}
+
+section {
+  padding: 0.5rem 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 0.5rem 2rem;
+  }
+}
+
+.icon {
+  color: #014a7d;
+  margin-right: 0.25rem;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+.header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #09368b;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    text-align: left;
+    font-size: 1.375rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
